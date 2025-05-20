@@ -3,8 +3,8 @@ pipeline {
 
   stages {
     stage('Checkout') {
-      steps {
-        git 'https://github.com/J-DevOp/chatbot-api.git'
+    steps {
+        git branch: 'main', url: 'https://github.com/J-DevOp/chatbot-api.git'
       }
     }
     stage('Install Dependencies') {
